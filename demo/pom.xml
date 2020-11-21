@@ -8,6 +8,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.11.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
+		<jenkins.buildNumber>${env.BUILD_NUMBER}</jenkins.buildNumber>      		
 	</parent>
 	<groupId>com.fyber</groupId>
 	<artifactId>demo</artifactId>
@@ -75,7 +76,7 @@
 				<version>2.6.0</version>
 				<configuration>
 					<to>
-						<image>gilbrown/fyber_demo:${project.version}</image>
+						<image>gilbrown/fyber_demo:${project.version}.${jenkins.buildNumber}</image>
 						<tags>
 					      <tag>latest</tag>
 					    </tags>
