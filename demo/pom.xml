@@ -75,14 +75,10 @@
 				<version>2.6.0</version>
 				<configuration>
 					<to>
-						<image>docker.io/gilbrown/fyber_demo:${project.version}</image>
+						<image>gilbrown/fyber_demo:${project.version}</image>
 						<tags>
 					      <tag>latest</tag>
 					    </tags>
-					<auth>
-						<username>${env.REGISTRY_USERNAME}</username>
-						<password>${env.REGISTRY_PASSWORD}</password>
-					</auth>
 					</to>
 				</configuration>
 				<executions>
