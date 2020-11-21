@@ -1,0 +1,15 @@
+spring:  
+  application:
+    name: Fyber-DEMO
+  cloud: 
+    consul:
+      host: ${consul_host:127.0.0.1}
+      port: 8500
+      discovery:    
+        instance-id: "${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,999999]}"
+      config:
+        enabled: true
+ 
+    
+server:
+  port: 8082
