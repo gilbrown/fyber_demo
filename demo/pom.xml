@@ -16,7 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<jenkins.buildNumber>${env.buildNumber}</jenkins.buildNumber>      		
+		<jenkins.buildNumber>${env.BUILD_NUMBER}</jenkins.buildNumber>      		
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR9</spring-cloud.version>
 	</properties>
